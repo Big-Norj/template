@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    /*align items to ensure its at the center of the center*/
+    align-items: center;
+     height: 150vh;
+}
+
+.gen-panel{
+    background-color: #fff;
+    width: 80%;
+    max-width: 960px;
+    padding-left: 40px;
+}
+
+.top{
+    line-height: 0.0;
+    font-size: 40px;
+    color: rgb(113, 113, 117);
+}
+
+.content .bold{
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+p{
+    color: gray;
+}
+
+.content{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 70px;
+}
+
+.template-container{
+    display: flex;
+}
+
+.template-container1{
+    padding: 20px 20px;
+    width: 200px;
+    height: 250px;
+    margin-top: 70px;
+    border-top: 4px solid rgb(238, 5, 5);
+    box-shadow: 0 5px 10px 5px rgba(199, 197, 197, 0.5);
+    position: relative;
+    border-radius: 10px;
+}
+
+.img-ad{
+    position: absolute;
+    bottom: 20;
+    right: 20;
+    padding-bottom: 20px;
+    padding-right: 30px;
+}
+.template-container2{
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    margin-top: -60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 200px;
+    border-top: 4px solid rgb(227, 142, 142);
+    box-shadow: 0 5px 10px 5px rgba(199, 197, 197, 0.5);
+    position: absolute;
+    border-radius: 10px;
+}
+
+.template-container3{
+    padding: 20px 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 200px;
+    border-top: 4px solid rgb(236, 181, 111);
+    box-shadow: 0 5px 10px 5px rgba(199, 197, 197, 0.5);
+    position: relative;
+    border-radius: 10px;
+}
+
+.template-container4{
+    padding: 20px 20px;
+    width: 250px;
+    height: 200px;
+    margin-top: 70px;
+    border-top: 4px solid rgb(123, 172, 228);
+    box-shadow: 0 5px 10px 5px rgba(199, 197, 197, 0.5);
+    position: relative;
+    border-radius: 10px;
+}
+
+.template-header{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.img-ad{
+    position: absolute;
+    
+}
+
+@media(max-width:770px){
+    .gen-panel{
+        flex-direction: column;
+    }
+    .template-container1{
+        order: 1;
+    }
+    .template-container2{
+        order: 2;
+    }
+    .template-container3{
+        order: 3;
+    }
+    .template-container4{
+        order: 4;
+    }
+    .template-container-dd{
+        display: inline-block;
+    }
+}
